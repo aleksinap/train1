@@ -2,9 +2,9 @@ name: Go CI
 
 on:
   push:
-    branches: ["main"]
+    branches: ["new_workflow"]
   pull_request:
-    branches: ["main"]
+    branches: ["new_workflow"]
 
 jobs:
   build:
@@ -33,4 +33,3 @@ jobs:
       - name: Run tests
         run: go test -v ./...
         working-directory: ./train1
-
