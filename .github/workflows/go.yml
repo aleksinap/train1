@@ -15,7 +15,7 @@ jobs:
           path: train1
       - uses: actions/setup-go@v4
         with:
-          go-version: 1.24
+          go-version: 1.20
       - name: Build
         run: go build -v ./...
         working-directory: ./train1
@@ -29,7 +29,7 @@ jobs:
           path: train1
       - uses: actions/setup-go@v4
         with:
-          go-version: 1.24
+          go-version: 1.20
       - name: Run tests
         run: go test -v ./...
         working-directory: ./train1
@@ -43,7 +43,7 @@ jobs:
           path: train1
       - uses: actions/setup-go@v4
         with:
-          go-version: 1.24
+          go-version: 1.20
       - name: Run race tests
         run: go test -race -v ./...
         working-directory: ./train1
@@ -57,7 +57,7 @@ jobs:
           path: train1
       - uses: actions/setup-go@v4
         with:
-          go-version: 1.24
+          go-version: 1.20
       - name: Lint code
         uses: golangci/golangci-lint-action@v3
         with:
