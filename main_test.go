@@ -13,7 +13,7 @@ func TestMaxInt(t *testing.T) {
 	}
 }
 
-// TestMain нужен только для setup/teardown
+// TestMain используется для подготовки/очистки перед и после тестов
 func TestMain(m *testing.M) {
 	// setup code (если нужно)
 
