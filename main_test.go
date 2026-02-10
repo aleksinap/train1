@@ -13,12 +13,13 @@ func TestMaxInt(t *testing.T) {
 	}
 }
 
+// TestMain нужен только для setup/teardown
 func TestMain(m *testing.M) {
-	// можно добавить setup, если нужно
+	// setup code (если нужно)
 
 	code := m.Run() // запускаем все тесты
 
-	// можно добавить teardown, если нужно
+	// teardown code (если нужно)
 
 	os.Exit(code)
 }
