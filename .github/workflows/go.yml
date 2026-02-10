@@ -14,6 +14,7 @@ jobs:
 
     - name: Build
       run: go build -v ./...
+      working-directory: .
 
   tests:
     # Задание "tests" зависит от задания "build" и будет выполнено после него
